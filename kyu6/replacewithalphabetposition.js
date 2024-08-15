@@ -1,4 +1,6 @@
 let text = "The sunset sets at twelve o' clock."
+debugger;
+
 function alphabetPosition(text) {
     let text_separeted = text.split('').map(letter => letter.toUpperCase()).filter((letter) => letter !== ' ' && letter !== "." && letter !== "'") 
     let alphabet = []
