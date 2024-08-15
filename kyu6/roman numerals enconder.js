@@ -1,22 +1,12 @@
-let number = 1990
-
+let number = 1990;
 function solution(number){
-let numbers = [1000,900,500,100,90,50,10,9,5,1]
-let separador = []
-numbers.forEach(element => {
-    let resto = number % element
-    debugger
-    if(resto != element){
-        separador.push(element)
-        number == resto
-        debugger
-    }
-    
-});
-console.log(separador)
-}
-
-console.log(solution(number))
-
-
-
+  var  roman = {M:1000,CM:900, D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1 };
+    var ans = '';
+  while(number>0){
+      for(a in roman){ 
+          if(roman[a]<=number){ ans += a; number-=roman[a]; break;}
+          
+      }
+  }
+  return ans;
+  }
