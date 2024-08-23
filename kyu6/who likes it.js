@@ -1,4 +1,4 @@
-unction likes(names) {
+function likes(names) {
   names = names || [];
   switch(names.length){
     case 0: return 'no one likes this'; break;

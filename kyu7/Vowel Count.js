@@ -14,7 +14,7 @@ function getCount(str) {
     return counter
   }
 
-  console.log(getCount(str))
+  
 
 
   /*
